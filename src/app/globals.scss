@@ -1,3 +1,11 @@
+@mixin gradient-text{
+    background: -webkit-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+    background: -moz-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+    background: linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 body {
     background-color: #101010;
     color: white;
@@ -16,6 +24,7 @@ h1, h2, h3, h4 {
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1250px;
     margin: 0 auto;
 }
+

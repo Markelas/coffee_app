@@ -1,0 +1,29 @@
+.green__btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 83px;
+  width: 333px;
+  height: 74px;
+  font-weight: 639;
+  font-size: 24px;
+  line-height: 146%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  background: linear-gradient(210deg, #237249 0%, #35c66b 100%);
+}
+
+.black__btn {
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 146%;
+  letter-spacing: -0.03em;
+  color: #d9d9d9;
+  border-radius: 83px;
+  width: 167px;
+  height: 74px;
+  background: #121517;
+  border: solid gray 1px;
+  margin: 0 15px;
+}
+
+/*# sourceMappingURL=Buttons.module.css.map */
