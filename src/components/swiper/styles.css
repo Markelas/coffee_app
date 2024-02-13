@@ -1,0 +1,67 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  border: 2px solid white;
+  border-radius: 29px;
+  width: 277px;
+  height: 554px;
+  text-align: center;
+  font-size: 18px;
+  background: #101010;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.swiper-slide .swiper__card img {
+  width: 202px;
+  height: 252px;
+}
+.swiper-slide .swiper__card h4 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 163%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.swiper-slide .swiper__card__desr {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 163%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #d9d9d9;
+}
+.swiper-slide .swiper__card__price {
+  display: inline;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 163%;
+  letter-spacing: -0.02em;
+}
+.swiper-slide .swiper__card__value {
+  display: inline;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 163%;
+  letter-spacing: -0.02em;
+  color: #d9d9d9;
+}
+.swiper-slide .swiper__card__btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 83px;
+  width: 186px;
+  height: 54px;
+  line-height: 146%;
+  color: #fff;
+  background: linear-gradient(210deg, #237249 0%, #35c66b 100%);
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: -0.02em;
+}
+
+/*# sourceMappingURL=styles.css.map */
