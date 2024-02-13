@@ -3,6 +3,18 @@
   justify-content: space-between;
   margin-top: 80px;
 }
+.promo::before {
+  z-index: -5;
+  content: "";
+  position: absolute;
+  left: 190px;
+  top: 30px;
+  width: 508px;
+  height: 527px;
+  background-image: url("../../public/img/HomePage/GreenCircle.svg");
+  background-repeat: no-repeat;
+  background-size: 508px 527px;
+}
 .promo .promo__text {
   text-wrap: nowrap;
   font-family: var(--font-family);
@@ -36,20 +48,91 @@
 .promo .promo__info .promo__btns {
   margin-top: 53px;
 }
+.promo .promo__info .promo__statistic {
+  display: flex;
+  margin-top: 55px;
+}
 .promo .promo__info .promo__statistic .promo__statistic__item {
+  margin-right: 69px;
+}
+.promo .promo__info .promo__statistic .promo__statistic__item h4 {
   font-weight: 400;
   font-size: 62px;
   line-height: 109%;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.015em;
   color: #fff;
 }
 .promo .promo__info .promo__statistic .promo__statistic__item span {
   color: #237249;
 }
+.promo .promo__info .promo__statistic .promo__statistic__item p {
+  letter-spacing: 0.09em;
+  margin: 0;
+}
 .promo .promo__img {
   position: relative;
   max-width: 90%;
   top: -90px;
+  z-index: -1;
+}
+
+/*----------------------WE HAVE-----------------*/
+.weHave {
+  margin-top: -240px;
+  position: relative;
+}
+.weHave::before {
+  z-index: -5;
+  content: "";
+  position: absolute;
+  left: -140px;
+  top: -100px;
+  width: 508px;
+  height: 527px;
+  background-image: url("../../public/img/HomePage/GreenCircle.svg");
+  background-repeat: no-repeat;
+  background-size: 508px 527px;
+}
+.weHave .weHave__box {
+  position: relative;
+  display: flex;
+  z-index: 2;
+  margin: 0 auto;
+  border-radius: 46px;
+  width: 1029px;
+  height: 372px;
+  background: linear-gradient(230deg, #fff 3.94%, #e5e5e5 64.08%, #fbfbfb 88.62%);
+}
+.weHave .weHave__box::after {
+  content: "";
+  position: absolute;
+  left: -80px;
+  top: -90px;
+  width: 202px;
+  height: 202px;
+  background-image: url("../../public/img/HomePage/WeHaveAchivment.svg");
+  background-size: 202px 202px;
+}
+.weHave .weHave__box__item {
+  margin: 15px 55px;
+}
+.weHave .weHave__box__item__title {
+  margin-top: -35px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 163%;
+  letter-spacing: -0.02em;
+  color: #121517;
+}
+.weHave .weHave__box__item__descr {
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 163%;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: rgba(18, 21, 23, 0.9);
 }
 
 /*# sourceMappingURL=page.module.css.map */
