@@ -1,3 +1,20 @@
+@mixin gradient-text{
+  background: -webkit-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+  background: -moz-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+  background: linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin section-title{
+  text-wrap: nowrap;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 109%;
+  letter-spacing: -0.06em;
+  color: #fff;
+}
+
 .promo{
   display: flex;
   justify-content: space-between;
@@ -15,26 +32,12 @@
     background-size: 508px 527px;
   }
   .promo__text{
-    text-wrap: nowrap;
-    font-family: var(--font-family);
-    font-weight: 800;
-    font-size: 80px;
-    line-height: 109%;
-    letter-spacing: -0.06em;
-    color: #fff;
+    @include section-title;
     width: 570px;
     strong {
-      font-family: var(--font-family);
-      font-weight: 800;
-      font-size: 80px;
-      line-height: 109%;
+      @include section-title;
       letter-spacing: -0.05em;
-      color: #fff;
-      background: -webkit-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
-      background: -moz-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
-      background: linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      @include gradient-text
     }
   }
   .promo__info{
@@ -77,12 +80,6 @@
     z-index: -1;
   }
 }
-//.promo__text__circle{
-//  display: block;
-//  position: absolute;
-//  top: 0;
-//  width: 1100px;
-//}
 
 /*----------------------WE HAVE-----------------*/
 .weHave {
@@ -141,6 +138,78 @@
         text-align: center;
         color: rgba(18, 21, 23, 0.9);
       }
+    }
+  }
+}
+
+/*--------------------WE MAKE-----------------*/
+
+.weMake{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 160px;
+  position: relative;
+  &::before{
+    z-index: -5;
+    content: "";
+    position: absolute;
+    left: -190px;
+    top: 400px;
+    width: 508px;
+    height: 527px;
+    background-image: url("../../public/img/HomePage/GreenCircle.svg");
+    background-repeat: no-repeat;
+    background-size: 508px 527px;
+  }
+  &::after{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: 265px;
+    top: 160px;
+    width: 1258px;
+    height: 676px;
+    background-image: url("../../public/img/HomePage/lines.svg");
+    background-size: 1258px 976px;
+    background-repeat: no-repeat;
+  }
+  .weMake__boximg{
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      left: 265px;
+      top: -60px;
+      width: 245px;
+      height: 245px;
+      background-image: url("../../public/img/HomePage/WeHaveAchivment.svg");
+      background-size: 245px 245px;
+    }
+  }
+  &__img {
+    margin: -64px 0 0 -72px;
+    z-index: -1;
+  }
+  .weMake__info{
+    h2{
+      @include section-title;
+      letter-spacing: -0.02em;
+      strong{
+        @include section-title;
+        letter-spacing: -0.05em;
+        @include gradient-text;
+      }
+    }
+    p{
+      margin-top: 55px;
+      max-width: 457px;
+      font-size: 20px;
+      line-height: 163%;
+      letter-spacing: 0.011em;
+      color: #d9d9d9;
+    }
+    iframe{
+      margin-top: 10px;
     }
   }
 }
