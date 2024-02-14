@@ -18,8 +18,8 @@ export default function TheSwiper(props) {
         <>
             <Swiper
                 slidesPerView={4}
-                spaceBetween={30}
-                centeredSlides={true}
+                spaceBetween={50}
+                centeredSlides={false}
                 navigation={true}
                 modules={[Pagination, Navigation]}
                 className="mySwiper"

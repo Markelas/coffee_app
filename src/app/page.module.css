@@ -219,14 +219,22 @@
 }
 
 /*-----------------------NEW OUR PRODUCTS----------------------*/
+.ourProducts {
+  margin-top: 38px;
+}
+.ourProducts__head {
+  display: flex;
+  margin-bottom: 55px;
+}
 .ourProducts__head h2 {
+  margin-right: 90px;
   text-wrap: nowrap;
   font-weight: 800;
   font-size: 80px;
   line-height: 109%;
   letter-spacing: -0.06em;
   color: #fff;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.04em;
 }
 .ourProducts__head h2 strong {
   text-wrap: nowrap;
@@ -235,7 +243,7 @@
   line-height: 109%;
   letter-spacing: -0.06em;
   color: #fff;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.03em;
   background: -webkit-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
   background: -moz-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
   background: linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
@@ -243,7 +251,6 @@
   -webkit-text-fill-color: transparent;
 }
 .ourProducts__head p {
-  margin-top: 55px;
   max-width: 444px;
   font-size: 20px;
   line-height: 163%;

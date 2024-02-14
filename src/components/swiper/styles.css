@@ -1,11 +1,10 @@
+@charset "UTF-8";
 .swiper {
   width: 100%;
   height: 100%;
 }
 
 .swiper-slide {
-  border: 2px solid white;
-  border-radius: 29px;
   width: 277px;
   height: 554px;
   text-align: center;
@@ -15,39 +14,47 @@
   display: flex;
   justify-content: center;
   color: white;
+  cursor: pointer;
+}
+.swiper-slide .swiper__card {
+  border: 2px solid white;
+  border-radius: 29px;
 }
 .swiper-slide .swiper__card img {
-  width: 202px;
-  height: 252px;
+  width: 262px;
+  height: 290px;
 }
 .swiper-slide .swiper__card h4 {
+  margin-top: -30px;
   font-weight: 500;
   font-size: 32px;
   line-height: 163%;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.06em;
   color: #fff;
 }
 .swiper-slide .swiper__card__desr {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 163%;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: #d9d9d9;
+  max-width: 200px;
+  margin: 0 auto 5px auto;
+  padding-top: 6px;
+  font-size: 20.13px;
+  line-height: 163.47%;
+  letter-spacing: 0.03em;
 }
 .swiper-slide .swiper__card__price {
   display: inline;
   font-weight: 500;
   font-size: 32px;
   line-height: 163%;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
+  margin-right: 40px;
+  margin-top: 40px;
 }
 .swiper-slide .swiper__card__value {
   display: inline;
   font-weight: 400;
   font-size: 20px;
   line-height: 163%;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.04em;
   color: #d9d9d9;
 }
 .swiper-slide .swiper__card__btn {
@@ -58,10 +65,47 @@
   height: 54px;
   line-height: 146%;
   color: #fff;
+  margin-top: 18px;
   background: linear-gradient(210deg, #237249 0%, #35c66b 100%);
   font-weight: 600;
   font-size: 17px;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
+}
+
+.swiper-button-prev {
+  border: 3px solid #2f9860;
+  background: transparent;
+  border-radius: 29px;
+  width: 84px;
+  height: 84px;
+}
+
+.swiper-button-prev::after {
+  content: "←";
+  color: #2f9860;
+  margin-bottom: 7px;
+}
+
+.swiper-button-prev:hover {
+  background: linear-gradient(210deg, rgba(35, 114, 73, 0.32) 0%, rgba(53, 198, 107, 0.22) 100%);
+}
+
+.swiper-button-next {
+  border: 3px solid #2f9860;
+  border-radius: 29px;
+  width: 84px;
+  height: 84px;
+  line-height: -10%;
+}
+
+.swiper-button-next:hover {
+  background: linear-gradient(210deg, rgba(35, 114, 73, 0.32) 0%, rgba(53, 198, 107, 0.22) 100%);
+}
+
+.swiper-button-next::after {
+  content: "→";
+  color: #2f9860;
+  margin-bottom: 7px;
 }
 
 /*# sourceMappingURL=styles.css.map */

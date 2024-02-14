@@ -8,41 +8,41 @@ const data:ICoffeeData[] = [
         id: 1,
         imgUrl: '/img/HomePage/carousel/carousel_fast_brown.png',
         title: 'Latte',
-        desr: 'With salted Caramel',
-        price: '7,10$',
-        volume: '300ml'
+        desr: 'With nutmeg and chocolate',
+        price: '7,50$',
+        volume: '330ml'
     },
     {
         id: 2,
-        imgUrl: '/img/HomePage/carousel/carousel_fast.png',
+        imgUrl: '/img/HomePage/carousel/carousel_fast_brown.png',
         title: 'Espresso',
         desr: 'With gingerbread flavor',
-        price: '7,10$',
-        volume: '300ml'
+        price: '7,90$',
+        volume: '330ml'
     },
     {
         id: 3,
         imgUrl: '/img/HomePage/carousel/carousel_cappuccino.png',
         title: 'Cappuccino',
         desr: 'With nutmeg and chocolate',
-        price: '7,10$',
-        volume: '300ml'
+        price: '7,20$',
+        volume: '330ml'
     },
     {
         id: 4,
         imgUrl: '/img/HomePage/carousel/carousel_fast_brown.png',
         title: 'Latte',
-        desr: 'With salted Caramel',
-        price: '7,10$',
-        volume: '300ml'
+        desr: 'With nutmeg and chocolate',
+        price: '7,15$',
+        volume: '330ml'
     },
     {
         id: 5,
-        imgUrl: '/img/HomePage/carousel/carousel_fast.png',
+        imgUrl: '/img/HomePage/carousel/carousel_cappuccino.png',
         title: 'Espresso',
         desr: 'With gingerbread flavor',
-        price: '7,10$',
-        volume: '300ml'
+        price: '7,40$',
+        volume: '330ml'
     },
     {
         id: 6,
@@ -50,7 +50,7 @@ const data:ICoffeeData[] = [
         title: 'Cappuccino',
         desr: 'With nutmeg and chocolate',
         price: '7,10$',
-        volume: '300ml'
+        volume: '330ml'
     },
 ]
 const OurProductsSection = () => {

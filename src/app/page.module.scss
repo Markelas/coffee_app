@@ -217,19 +217,22 @@
 /*-----------------------NEW OUR PRODUCTS----------------------*/
 
 .ourProducts{
+  margin-top: 38px;
   &__head{
+    display: flex;
+    margin-bottom: 55px;
     h2 {
+      margin-right: 90px;
       @include section-title;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.04em;
       strong{
         @include section-title;
-        letter-spacing: -0.05em;
+        letter-spacing: -0.03em;
         @include gradient-text;
       }
     }
 
     p{
-      margin-top: 55px;
       max-width: 444px;
       font-size: 20px;
       line-height: 163%;
