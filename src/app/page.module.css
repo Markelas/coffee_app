@@ -221,7 +221,7 @@
 /*-----------------------NEW OUR PRODUCTS----------------------*/
 .ourProducts {
   margin-top: 38px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .ourProducts__head {
   display: flex;
@@ -257,6 +257,128 @@
   line-height: 163%;
   letter-spacing: 0.011em;
   color: #d9d9d9;
+}
+
+/*---------------------OUR NEW EVENTS---------------------*/
+.newEvents {
+  margin-top: 100px;
+}
+.newEvents__head {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 45px;
+}
+.newEvents__head p {
+  margin-right: 72px;
+  max-width: 457px;
+  font-size: 20px;
+  line-height: 163%;
+  letter-spacing: 0.011em;
+  color: #d9d9d9;
+}
+.newEvents__head h2 {
+  margin-right: 40px;
+  max-width: 366px;
+  text-wrap: nowrap;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 109%;
+  letter-spacing: -0.06em;
+  color: #fff;
+  letter-spacing: -0.04em;
+}
+.newEvents__head h2 strong {
+  text-wrap: nowrap;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 109%;
+  letter-spacing: -0.06em;
+  color: #fff;
+  letter-spacing: -0.03em;
+  background: -webkit-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+  background: -moz-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+  background: linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.newEvents__box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.newEvents__box__bigCard {
+  width: 615px;
+  height: 260px;
+  border-radius: 30px;
+  margin: 12px;
+  cursor: pointer;
+  padding: 25px;
+  transition: filter 0.2s;
+}
+.newEvents__box__bigCard:nth-child(1) {
+  background-image: url("../../public/img/HomePage/OurNewEvents/two_coffee.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.newEvents__box__bigCard:nth-child(2) {
+  background-image: url("../../public/img/HomePage/OurNewEvents/kitchen_tour.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.newEvents__box__bigCard:hover {
+  filter: brightness(130%);
+}
+.newEvents__box__minCard {
+  width: 401px;
+  height: 270px;
+  border-radius: 32px;
+  margin: 12px;
+  cursor: pointer;
+  padding: 20px;
+  transition: filter 0.2s;
+}
+.newEvents__box__minCard:nth-child(3) {
+  background-image: url("../../public/img/HomePage/OurNewEvents/free_coffee.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.newEvents__box__minCard:nth-child(4) {
+  background-image: url("../../public/img/HomePage/OurNewEvents/our_inst.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.newEvents__box__minCard:nth-child(5) {
+  background-image: url("../../public/img/HomePage/OurNewEvents/where_are.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.newEvents__box__minCard:hover {
+  filter: brightness(123%);
+}
+.newEvents__box h4 {
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 108.5%;
+}
+.newEvents__box button {
+  margin-top: 40px;
+  width: 167.97px;
+  height: 74.65px;
+  border-radius: 82px;
+  background: linear-gradient(244.98deg, rgb(35, 114, 73) 5.493%, rgb(53, 198, 107) 76.668%);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 146.47%;
+  letter-spacing: -3%;
+  color: rgb(217, 217, 217);
+  cursor: pointer;
+}
+.newEvents__box button:hover {
+  background: linear-gradient(210deg, rgba(41, 159, 98, 0.91) 0%, rgba(9, 152, 64, 0.93) 100%);
 }
 
 /*# sourceMappingURL=page.module.css.map */
