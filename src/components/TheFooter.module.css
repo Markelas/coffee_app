@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+}
+.footer h2 {
+  font-weight: 800;
+  font-size: 37px;
+  line-height: 109%;
+  letter-spacing: -0.03em;
+  margin-right: 40px;
+  background: -webkit-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+  background: -moz-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+  background: linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer .footer__links {
+  display: flex;
+}
+.footer .footer__links nav {
+  display: flex;
+}
+.footer .footer__links nav ul {
+  padding-left: 0;
+}
+.footer .footer__links nav ul li {
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=TheFooter.module.css.map */
