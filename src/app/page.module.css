@@ -221,6 +221,7 @@
 /*-----------------------NEW OUR PRODUCTS----------------------*/
 .ourProducts {
   margin-top: 38px;
+  margin-bottom: 200px;
 }
 .ourProducts__head {
   display: flex;

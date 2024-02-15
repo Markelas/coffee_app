@@ -17,6 +17,8 @@
     .swiper__card{
         border: 2px solid white;
         border-radius: 29px;
+        max-width: 284px;
+        transition: all 0.4s ease-out;
         img {
             width: 262px;
             height: 290px;
@@ -67,16 +69,41 @@
             font-weight: 600;
             font-size: 17px;
             letter-spacing: 0.02em;
+            transition: all 0.4s ease-out;
+        }
+    }
+    .swiper__card:hover{
+        border: 2px solid #2baf6b;
+        border-radius: 29px;
+        z-index: 10;
+        .swiper__card__btn{
+            background: linear-gradient(210deg, #27ab66 0%, #08be4d 100%);
+        }
+
+        &::before {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 508px;
+            height: 527px;
+            background-image: url("../../../public/img/HomePage/carousel/background_card.svg");
+            background-repeat: no-repeat;
+            background-size: 508px 527px;
+            transition: all 0.4s ease-out;
         }
     }
 }
 
 .swiper-button-prev{
     border: 3px solid #2F9860FF;
-    background:transparent;
+    background: linear-gradient(210deg, rgba(35, 114, 73, 0.57) 0%, rgba(53, 198, 107, 0.22) 100%);
     border-radius: 29px;
     width: 84px;
     height: 84px;
+    left: 0;
+    transition: all 0.4s ease-out;
 }
 .swiper-button-prev::after{
     content: '←';
@@ -84,16 +111,20 @@
     margin-bottom: 7px;
 }
 .swiper-button-prev:hover{
+    transition: all 0.4s ease-out;
     background: linear-gradient(210deg, rgba(35, 114, 73, 0.32) 0%, rgba(53, 198, 107, 0.22) 100%);
 }
 .swiper-button-next{
+    background: linear-gradient(210deg, rgba(35, 114, 73, 0.57) 0%, rgba(53, 198, 107, 0.22) 100%);
     border: 3px solid #2F9860FF;
     border-radius: 29px;
     width: 84px;
     height: 84px;
-    line-height: -10%;
+    right: 0;
+    transition: all 0.4s ease-out;
 }
 .swiper-button-next:hover{
+    transition: all 0.4s ease-out;
     background: linear-gradient(210deg, rgba(35, 114, 73, 0.32) 0%, rgba(53, 198, 107, 0.22) 100%);
 }
 .swiper-button-next::after{

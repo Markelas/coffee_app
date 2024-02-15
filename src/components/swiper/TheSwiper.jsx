@@ -17,8 +17,8 @@ export default function TheSwiper(props) {
     return (
         <>
             <Swiper
-                slidesPerView={4}
-                spaceBetween={50}
+                slidesPerView={3}
+                spaceBetween={-95}
                 centeredSlides={false}
                 navigation={true}
                 modules={[Pagination, Navigation]}
