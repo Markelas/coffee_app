@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .green__btn {
   cursor: pointer;
   border: none;
@@ -24,6 +25,30 @@
   background: #121517;
   border: solid gray 1px;
   margin: 0 15px;
+}
+
+/*-----------Page up BTN------------*/
+.footer__upBtn {
+  background: linear-gradient(210deg, rgba(35, 114, 73, 0.57) 0%, rgba(53, 198, 107, 0.22) 100%);
+  border: 3px solid #2f9860;
+  border-radius: 29px;
+  margin: 6px 0 0 35px;
+  width: 84px;
+  height: 84px;
+  right: 0;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+
+.footer__upBtn:hover {
+  transition: all 0.4s ease-out;
+  background: linear-gradient(210deg, rgba(35, 114, 73, 0.32) 0%, rgba(53, 198, 107, 0.22) 100%);
+}
+
+.footer__upBtn::after {
+  content: "↑";
+  color: #2f9860;
+  font-size: 40px;
 }
 
 /*# sourceMappingURL=Buttons.module.css.map */

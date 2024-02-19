@@ -1,29 +1,90 @@
 .footer {
+  padding: 30px 12px;
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
-.footer h2 {
+.footer::before {
+  z-index: -7;
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  opacity: 70%;
+  width: 308px;
+  height: 327px;
+  background-image: url("../../public/img/HomePage/GreenCircle.svg");
+  background-repeat: no-repeat;
+  background-size: 308px 327px;
+}
+.footer .footer__links {
+  display: flex;
+  margin-bottom: 40px;
+}
+.footer .footer__links h2 {
+  display: inline;
   font-weight: 800;
   font-size: 37px;
-  line-height: 109%;
   letter-spacing: -0.03em;
   margin-right: 40px;
+  cursor: default;
   background: -webkit-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
   background: -moz-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
   background: linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.footer .footer__links {
-  display: flex;
-}
 .footer .footer__links nav {
   display: flex;
+  margin-left: 67px;
 }
 .footer .footer__links nav ul {
   padding-left: 0;
+  margin-right: 84px;
 }
-.footer .footer__links nav ul li {
+.footer .footer__links nav ul li:first-child {
   list-style-type: none;
+}
+.footer .footer__links nav ul li:first-child a {
+  color: rgb(187, 179, 179);
+  font-size: 20px;
+  line-height: 129%;
+  letter-spacing: 0.1em;
+}
+.footer .footer__links nav ul li:first-child a:hover {
+  color: #ffffff;
+}
+.footer .footer__links nav ul li:not(:first-child) {
+  list-style-type: none;
+  margin-top: 5px;
+}
+.footer .footer__links nav ul li:not(:first-child) a {
+  color: rgba(187, 179, 179, 0.43);
+  font-size: 20px;
+  line-height: 129%;
+}
+.footer .footer__links nav ul li:not(:first-child) a:hover {
+  color: #a8a8a8;
+}
+.footer .footer__bottom {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 65px;
+}
+.footer .footer__bottom a {
+  margin: 0 5px;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  background: -webkit-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+  background: -moz-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+  background: linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*# sourceMappingURL=TheFooter.module.css.map */

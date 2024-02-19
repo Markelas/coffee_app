@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from "./TheFooter.module.scss"
+import PageUpButton from "@/components/buttons/PageUpButton";
 const TheFooter = () => {
+
     return (
         <footer className={styles.footer}>
-            <h2>StarBucks</h2>
             <div className={styles.footer__links}>
+                <h2>StarBucks</h2>
                 <nav>
                     <ul>
                         <li><a href="#">Main</a></li>
@@ -12,7 +14,7 @@ const TheFooter = () => {
                         <li><a href="#">More</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#">We Make</a></li>
+                        <li><a href="#">We make</a></li>
                         <li><a href="#">Process</a></li>
                     </ul>
                     <ul>
@@ -29,10 +31,12 @@ const TheFooter = () => {
                         <li><a href="#">Number</a></li>
                     </ul>
                 </nav>
-                <button></button>
+                <PageUpButton/>
             </div>
-            <a href='tel:+79999999999'>+7-999-999-99-99</a>
-            <a href='https://github.com/Markelas'>@markelas</a>
+            <div className={styles.footer__bottom}>
+                <a href='tel:+79999999999'>+7-999-999-99-99</a>
+                <a href='https://github.com/Markelas'>GitHub</a>
+            </div>
         </footer>
     );
 };

@@ -1,27 +1,94 @@
+@mixin gradient-text{
+  background: -webkit-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+  background: -moz-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+  background: linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .footer{
+  padding: 30px 12px;
+  width: 100%;
   display: flex;
-  h2{
-    font-weight: 800;
-    font-size: 37px;
-    line-height: 109%;
-    letter-spacing: -0.03em;
-    margin-right: 40px;
-    background: -webkit-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
-    background: -moz-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
-    background: linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  flex-wrap: wrap;
+  position: relative;
+  &::before{
+    z-index: -7;
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    opacity: 70%;
+    width: 308px;
+    height: 327px;
+    background-image: url("../../public/img/HomePage/GreenCircle.svg");
+    background-repeat: no-repeat;
+    background-size: 308px 327px;
   }
+
   .footer__links{
     display: flex;
+    margin-bottom: 40px;
+    h2{
+      display: inline;
+      font-weight: 800;
+      font-size: 37px;
+      letter-spacing: -0.03em;
+      margin-right: 40px;
+      cursor: default;
+      background: -webkit-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+      background: -moz-linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+      background: linear-gradient(225deg, rgb(35, 114, 73) 0%, rgb(53, 198, 107) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
     nav{
       display: flex;
+      margin-left: 67px;
       ul{
         padding-left: 0;
-        li{
+        margin-right: 84px;
+        li:first-child{
           list-style-type: none;
+          a {
+            color: rgb(187, 179, 179);
+            font-size: 20px;
+            line-height: 129%;
+            letter-spacing: 0.1em;
+          }
+          a:hover{
+            color: #ffffff;
+          }
+        }
+        li:not(:first-child){
+          list-style-type: none;
+          margin-top: 5px;
+          a {
+            color: rgba(187, 179, 179, 0.43);
+            font-size: 20px;
+            line-height: 129%;
+          }
+          a:hover{
+            color: #a8a8a8;
+          }
         }
       }
+    }
+  }
+
+  .footer__bottom{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 65px;
+    a{
+      margin: 0 5px;
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 32px;
+      letter-spacing: 0.05em;
+      @include gradient-text;
     }
   }
 }
